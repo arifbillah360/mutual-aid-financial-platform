@@ -155,3 +155,274 @@ body {
 .nav-link.active {
     @apply text-emerald-300 border-b-2 border-emerald-300;
 }
+
+/* Dashboard Specific Styles */
+
+/* Sidebar */
+.dashboard-sidebar {
+  @apply fixed top-0 left-0 h-full bg-gradient-to-b from-gray-900 to-indigo-950 text-white w-64 p-4 z-40 transition-transform duration-300 ease-in-out transform;
+  /* Adjust for mobile to be off-screen */
+  @apply -translate-x-full md:translate-x-0;
+}
+
+.dashboard-sidebar.active {
+  @apply translate-x-0; /* Bring sidebar on-screen for mobile */
+}
+
+/* Main Content Area */
+.dashboard-content {
+  @apply md:ml-64 transition-all duration-300 ease-in-out p-4 md:p-8;
+}
+
+/* Top Bar */
+.dashboard-top-bar {
+  @apply sticky top-0 md:ml-64 bg-gray-900 bg-opacity-70 backdrop-filter backdrop-blur-md z-30 p-4 flex items-center justify-between shadow-md;
+}
+
+/* Stat Cards */
+.stat-card {
+  @apply p-6 rounded-xl shadow-lg glassmorphism text-white flex flex-col items-center justify-center space-y-3;
+}
+.stat-card-icon {
+  @apply w-12 h-12 rounded-full flex items-center justify-center;
+}
+.stat-card-value {
+  @apply text-4xl font-extrabold;
+}
+.stat-card-title {
+  @apply text-sm uppercase tracking-wider text-gray-300;
+}
+
+/* Constellation Visualization */
+.constellation-viz-container {
+  @apply relative w-full h-80 sm:h-96 lg:h-[400px] flex items-center justify-center;
+}
+.constellation-svg {
+  @apply overflow-visible; /* Allow elements to draw outside viewBox if needed for animations */
+}
+.alcyone-center {
+  @apply transition-all duration-300 ease-in-out;
+}
+.alcyone-avatar {
+  @apply w-full h-full object-cover rounded-full;
+}
+.member-orbit {
+  @apply stroke-indigo-400 stroke-1 opacity-20;
+}
+.member-node {
+  @apply transition-transform duration-300 ease-in-out cursor-pointer;
+}
+.member-tooltip {
+  @apply absolute hidden px-3 py-1 bg-gray-800 text-white text-xs rounded shadow-lg whitespace-nowrap z-50;
+}
+.member-node:hover + .member-tooltip {
+  @apply block;
+}
+
+/* Tour Timeline */
+.tour-timeline-item {
+  @apply relative flex items-center;
+}
+.tour-timeline-icon {
+  @apply w-8 h-8 flex items-center justify-center rounded-full border-2 text-white z-10;
+}
+.tour-timeline-line {
+  @apply absolute h-full w-0.5 bg-gray-600 left-4 top-0 -z-0;
+}
+.tour-timeline-content {
+  @apply ml-6 pb-8;
+}
+
+/* Table styles for dashboard */
+.dashboard-table-container {
+    @apply overflow-x-auto rounded-xl glassmorphism p-4;
+}
+
+.dashboard-table {
+    @apply w-full text-left text-gray-300;
+}
+
+.dashboard-table thead th {
+    @apply px-4 py-3 text-xs font-semibold uppercase tracking-wider text-gray-400;
+}
+
+.dashboard-table tbody tr {
+    @apply border-b border-gray-700 hover:bg-gray-800 transition-colors duration-200;
+}
+
+.dashboard-table tbody td {
+    @apply px-4 py-3 text-sm;
+}
+
+.dashboard-table .status-badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+}
+
+.status-badge.completed { @apply bg-green-900 text-green-300; }
+.status-badge.pending { @apply bg-yellow-900 text-yellow-300; }
+.status-badge.failed { @apply bg-red-900 text-red-300; }
+.status-badge.processing { @apply bg-blue-900 text-blue-300; }
+.status-badge.sent { @apply bg-purple-900 text-purple-300; }
+.status-badge.received { @apply bg-indigo-900 text-indigo-300; }
+.status-badge.withdrawal { @apply bg-orange-900 text-orange-300; }
+.status-badge.referral-bonus { @apply bg-emerald-900 text-emerald-300; }
+
+
+.text-green-amount { @apply text-emerald-400; }
+.text-red-amount { @apply text-red-400; }
+
+/* Constellation Progress Bar */
+.progress-bar-container {
+  @apply w-full bg-gray-700 rounded-full h-4;
+}
+.progress-bar-fill {
+  @apply h-4 rounded-full bg-emerald-500 transition-all duration-500 ease-out;
+}
+
+/* Mobile Bottom Navigation (optional, if needed for super small screens) */
+/* .bottom-nav {
+  @apply fixed bottom-0 left-0 w-full bg-gray-900 border-t border-gray-700 flex justify-around py-2 md:hidden z-50;
+} */
+
+/* Tabs component for settings page */
+.tab-button {
+  @apply px-4 py-2 text-sm font-medium rounded-t-lg transition-colors duration-200;
+}
+.tab-button.active {
+  @apply bg-gray-800 text-emerald-400 border-b-2 border-emerald-400;
+}
+.tab-button:not(.active) {
+  @apply text-gray-400 hover:text-white hover:bg-gray-700;
+}
+.tab-content {
+  @apply p-6 bg-gray-800 rounded-b-lg shadow-inner;
+}
+
+/* Toast Notifications */
+.toast-container {
+  @apply fixed bottom-5 right-5 z-50 flex flex-col items-end space-y-2;
+}
+.toast-item {
+  @apply p-4 rounded-lg shadow-lg text-white max-w-sm w-full;
+}
+.toast-item.success { @apply bg-green-500; }
+.toast-item.error { @apply bg-red-500; }
+.toast-item.info { @apply bg-blue-500; }
+
+/* Filament Admin Panel Customizations */
+.fi-modal-content {
+  @apply bg-gray-800 text-gray-100;
+}
+.fi-input-wrapper {
+  @apply bg-gray-700 border-gray-600;
+}
+.fi-button {
+  @apply transition-colors duration-200 ease-in-out;
+}
+.fi-button.fi-btn-primary {
+  @apply bg-emerald-600 hover:bg-emerald-700 focus:ring-emerald-500;
+}
+.fi-sidebar {
+  @apply bg-gradient-to-b from-gray-900 to-indigo-950;
+}
+.fi-topbar {
+  @apply bg-gray-900 bg-opacity-70 backdrop-blur-md;
+}
+.fi-header {
+  @apply bg-transparent; /* Ensure transparent header to show background */
+}
+.fi-page {
+  @apply bg-transparent; /* Ensure transparent page background */
+}
+.fi-table-container {
+  @apply bg-gray-800 border-gray-700;
+}
+.fi-table-row {
+  @apply border-gray-700 hover:bg-gray-700/50;
+}
+.fi-table-header-cell {
+  @apply text-gray-400;
+}
+.fi-table-cell {
+  @apply text-gray-200;
+}
+.fi-badge {
+  @apply dark:bg-gray-700 dark:text-gray-200;
+}
+/* Specific badge colors for Filament */
+.fi-badge.fi-color-success { @apply bg-green-800/20 text-green-400; }
+.fi-badge.fi-color-warning { @apply bg-yellow-800/20 text-yellow-400; }
+.fi-badge.fi-color-danger { @apply bg-red-800/20 text-red-400; }
+.fi-badge.fi-color-info { @apply bg-blue-800/20 text-blue-400; }
+.fi-badge.fi-color-primary { @apply bg-emerald-800/20 text-emerald-400; }
+.fi-badge.fi-color-secondary { @apply bg-indigo-800/20 text-indigo-400; }
+
+/* Chart Widget Styling */
+.fi-widget .fi-chart-widget-content {
+  @apply bg-gray-800 rounded-xl shadow-lg;
+}
+.fi-widget .fi-chart-widget-content canvas {
+  @apply p-4;
+}
+
+/* Glassmorphism for Filament cards */
+.fi-section, .fi-form-component-container, .fi-fieldset, .fi-panel {
+  @apply glassmorphism !bg-opacity-5 !backdrop-blur-xl border border-gray-700/50 shadow-lg;
+}
+.fi-section-header {
+  @apply !bg-transparent; /* Ensure header also transparent */
+}
+.fi-section-content {
+  @apply !bg-transparent; /* Ensure content also transparent */
+}
+.fi-header-heading {
+    @apply text-white;
+}
+.fi-sidebar-item-label {
+    @apply text-gray-200 hover:text-emerald-300;
+}
+.fi-sidebar-item.fi-active .fi-sidebar-item-label {
+    @apply !text-emerald-300;
+}
+.fi-sidebar-item.fi-active {
+    @apply !bg-emerald-800/30;
+}
+.fi-dropdown-list-item-label {
+    @apply text-gray-200;
+}
+.fi-dropdown-list-item:hover .fi-dropdown-list-item-label {
+    @apply text-emerald-300;
+}
+.fi-form-field-wrapper .text-gray-500 { /* For help texts etc. */
+    @apply text-gray-400;
+}
+.fi-section-header .text-gray-950 { /* Section title color */
+    @apply text-white;
+}
+.fi-section-header .text-gray-500 { /* Section description color */
+    @apply text-gray-300;
+}
+
+/* For Custom pages like Reports/Settings */
+.fi-page-content {
+    @apply bg-transparent; /* Ensure custom page content background is transparent */
+}
+.fi-header-wrapper {
+    @apply flex-col sm:flex-row;
+}
+.fi-header-wrapper .fi-avatar {
+    @apply order-first sm:order-last;
+}
+.fi-topbar .flex.items-center { /* Align user menu in top bar */
+    @apply justify-end;
+}
+.filament-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px; /* Adjust as needed */
+}
+.filament-logo img {
+    height: 100%;
+    object-fit: contain;
+}
