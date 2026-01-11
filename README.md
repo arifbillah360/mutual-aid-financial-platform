@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 7 Ensemble - Web Portal
 
 Platform d'entraide révolutionnaire pour transformer 21€ en liberté financière.
@@ -173,3 +174,16 @@ Pour toute question sur le projet, contactez l'équipe 7 Ensemble.
 ---
 
 **Note** : Ce README sera mis à jour au fur et à mesure de l'évolution du projet.
+=======
+<div align="center">
+
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+
+  <h1>Built with AI Studio</h2>
+
+  <p>The fastest path from prompt to production with Gemini.</p>
+
+  <a href="https://aistudio.google.com/apps">Start building</a>
+
+</div>
+>>>>>>> 4ac3cdc2a86eb4917658cd252814d647c49e6f60
