@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 Ensemble - Votre Nouvelle Aventure Financière</title>
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Promotional Banner -->
+    <section class="promo-banner">
+        <img src="img/Animated_Banner.gif" alt="7 Ensemble - Promotional Banner">
+    </section>
+
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">7 Ensemble</a>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span>☰</span>
+            </button>
+            <div class="nav-menu">
+                <a href="index.html">Accueil</a>
+                <a href="les7tours.html">Les 7 Tours</a>
+                <a href="mission.html">Mission</a>
+            </div>
+            <button class="btn-primary" onclick="showSevenModal()">Rejoindre la révolution</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>7 Ensemble</h1>
+                <p class="subtitle">Qui, avec 21€, a changé ma vie</p>
+                <p class="tagline">Une plateforme conçue pour que tout le monde puisse vivre et profiter des bons moments de la vie en famille, <br> sans avoir à se soucier si demain, ils auront de quoi payer leurs factures</p>
+
+                <div class="transformation-amount">1'575'747€</div>
+                <p class="hero-subtitle-text">Votre destination finale avec seulement 21€ de départ</p>
+                <p class="hero-risk-zero-text">À RISQUE ZÉRO POUR VOUS</p>
+
+                <div class="flex-buttons-container">
+                    <button class="btn-primary btn-gradient-pink" onclick="showThreeModal()">Commencer avec 3 personnes</button>
+                    <button class="btn-primary" onclick="showSevenModal()">Commencer avec 7 personnes</button>
+                </div>
+
+                <p class="hero-quick-message">En ligne, ça va très très vite ! Un message WhatsApp et c'est parti !</p>
+            </div>
+        </section>
+
+        <section id="principe" class="principe-section">
+            <div class="container">
+                <h2 class="section-header-large">Le Principe Simple : La Force du 7 et du 21</h2>
+
+                <div class="explanation-box">
+                    <h3 class="section-header-pink">Pourquoi 21€ et pourquoi 7 ?</h3>
+                    <p class="text-explanation">
+                        <strong class="text-strong-cyan">Le chiffre 7 = puissance spirituelle et une symbolique énorme</strong><br>
+                        <strong class="text-strong-red">Le 3 = force universelle (3 × 7 = 21, et 2+1 = 3)</strong><br>
+                        Ce ne sont pas des montants choisis au hasard, c'est de la pure énergie mathématique !
+                    </p>
+                </div>
+
+                <div class="constellation-visual">
+                    <h3 class="section-header-pink position-relative-z1">Vos Constellations : Le Réseau Qui Vous Suivra À Vie</h3>
+
+                    <div class="dual-constellation-wrapper">
+                        <!-- Triangulum Constellation (Left - 3 members) -->
+                        <div class="constellation-side">
+                            <h4 class="constellation-title">Triangulum</h4>
+                            <p class="constellation-subtitle">3 personnes</p>
+                            <div class="constellation-container triangulum-container">
+                                <div class="constellation-center triangulum-center">Alcyone</div>
+                                <div class="constellation-member triangulum-member triangulum-1"></div>
+                                <div class="constellation-member triangulum-member triangulum-2"></div>
+                                <div class="constellation-member triangulum-member triangulum-3"></div>
+                            </div>
+                            <p class="constellation-gain">Gain: 7'789€</p>
+                        </div>
+
+                        <!-- Pléiades Constellation (Right - 7 members) -->
+                        <div class="constellation-side">
+                            <h4 class="constellation-title">Pléiades</h4>
+                            <p class="constellation-subtitle">7 personnes</p>
+                            <div class="constellation-container pleiades-container">
+                                <div class="constellation-center pleiades-center">Alcyone</div>
+                                <div class="constellation-member pleiades-member member-1"></div>
+                                <div class="constellation-member pleiades-member member-2"></div>
+                                <div class="constellation-member pleiades-member member-3"></div>
+                                <div class="constellation-member pleiades-member member-4"></div>
+                                <div class="constellation-member pleiades-member member-5"></div>
+                                <div class="constellation-member pleiades-member member-6"></div>
+                                <div class="constellation-member pleiades-member member-7"></div>
+                            </div>
+                            <p class="constellation-gain">Gain: 1'575'747€</p>
+                        </div>
+                    </div>
+
+                    <p class="text-medium-bold position-relative-z1 margin-top-medium">Une fois votre Constellation créée, chaque tour peut durer UNE SEMAINE !</p>
+                    <p class="hero-quick-message margin-top-standard position-relative-z1">Le plus long, c'est le premier tour. Après, ça va très très vite !</p>
+                </div>
+
+                <div class="principe-grid">
+                    <div class="principe-card">
+                        <div class="principe-number">💝</div>
+                        <h3>Vous Aidez</h3>
+                        <p class="hero-subtitle-text text-strong-cyan"><strong>21€</strong></p>
+                        <p>à une personne dans le besoin</p>
+                    </div>
+                    <div class="principe-card">
+                        <div class="principe-number">🎁</div>
+                        <h3>Vous Recevez</h3>
+                        <p class="hero-subtitle-text text-strong-cyan"><strong>147€</strong></p>
+                        <p>de 7 personnes (21€ chacune)</p>
+                    </div>
+                    <div class="principe-card">
+                        <div class="principe-number">✨</div>
+                        <h3>Vous Gardez</h3>
+                        <p class="hero-subtitle-text text-strong-cyan"><strong>47€ nets</strong></p>
+                        <p>Vous avez déjà doublé votre mise !</p>
+                    </div>
+                </div>
+
+                <div class="option-box-header">
+                    <h2 class="section-header-medium">🚨 DEUX POSSIBILITÉS POUR COMMENCER 🚨</h2>
+
+                    <div class="grid-two-column">
+                        <div class="option-box">
+                            <h3 class="text-strong-pink">Option 3 Personnes</h3>
+                            <p class="text-centered">Pour ceux qui trouvent 7 "beaucoup"</p>
+                            <h3 class="text-strong-cyan-large">Gain total : 7'789€</h3>
+                            <p class="margin-top-standard">Une fois que vous voyez que ça marche, vous passez au 7 !</p>
+                        </div>
+                        <div class="option-box">
+                            <h3 class="text-strong-cyan-large">Option 7 Personnes</h3>
+                            <p class="text-centered">Pour les audacieux qui veulent tout</p>
+                            <h3 class="text-strong-pink">Gain total : 1'575'747€</h3>
+                            <p class="margin-top-standard">La voie royale vers la liberté financière !</p>
+                        </div>
+                    </div>
+
+                    <p class="text-medium-bold">En ligne, c'est ULTRA RAPIDE : un message WhatsApp, un lien de paiement, et c'est parti ! 🚀</p>
+                </div>
+
+                <div class="warning-box">
+                    <h3 class="section-header-pink">⚠️ CE N'EST QUE LE DÉBUT ! ⚠️</h3>
+                    <p class="text-explanation">147€, c'est juste pour prouver que ça marche. Les VRAIS gains viennent avec les tours suivants !</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tours" class="tours-section">
+            <div class="container">
+                <h2 class="section-header-large">Les 7 Tours Magiques : Votre Ascension Vers la Prospérité</h2>
+                <p class="text-large">
+                    Préparez-vous à découvrir comment <strong>21€ se transforment en 1'575'747€</strong> grâce à la puissance exponentielle de notre système !
+                </p>
+                <p class="text-centered">
+                    <a href="les7tours.html" class="btn-primary btn-tours-link">📊 Voir le détail des 7 Tours</a>
+                </p>
+
+                <div class="tours-grid">
+                    <div class="tour-card">
+                        <div class="tour-badge">Tour 1</div>
+                        <h3 class="tour-card-title">L'Éveil</h3>
+                        <div class="tour-card-amount">147€</div>
+                        <p class="tour-card-description">Votre première victoire qui confirme que le système fonctionne parfaitement</p>
+                    </div>
+
+                    <div class="tour-card">
+                        <div class="tour-badge">Tour 2</div>
+                        <h3 class="tour-card-title">L'Élan</h3>
+                        <div class="tour-card-amount">700€</div>
+                        <p class="tour-card-description">L'accélération commence, vos premières vraies économies</p>
+                    </div>
+
+                    <div class="tour-card">
+                        <div class="tour-badge">Tour 3</div>
+                        <h3 class="tour-card-title">La Percée</h3>
+                        <div class="tour-card-amount">3'500€</div>
+                        <p class="tour-card-description">Le tournant décisif qui change votre rapport à l'argent</p>
+                    </div>
+
+                    <div class="tour-card">
+                        <div class="tour-badge">Tour 4</div>
+                        <h3 class="tour-card-title">L'Envol</h3>
+                        <div class="tour-card-amount">14'000€</div>
+                        <p class="tour-card-description">La liberté financière commence à prendre forme</p>
+                    </div>
+
+                    <div class="tour-card">
+                        <div class="tour-badge">Tour 5</div>
+                        <h3 class="tour-card-title">La Puissance</h3>
+                        <div class="tour-card-amount">70'000€</div>
+                        <p class="tour-card-description">Vos projets les plus fous deviennent réalisables</p>
+                    </div>
+
+                    <div class="tour-card">
+                        <div class="tour-badge">Tour 6</div>
+                        <h3 class="tour-card-title">L'Excellence</h3>
+                        <div class="tour-card-amount">350'000€</div>
+                        <p class="tour-card-description">L'indépendance financière totale à portée de main</p>
+                    </div>
+
+                    <div class="tour-card tour-card-final">
+                        <div class="tour-badge tour-badge-final">Tour 7</div>
+                        <h3 class="tour-card-title">L'Apothéose</h3>
+                        <div class="tour-card-amount tour-card-amount-final">1'400'000€</div>
+                        <p class="tour-card-description">Le sommet de votre transformation financière</p>
+                    </div>
+                </div>
+
+                <div class="tours-summary">
+                    <h3 class="tours-summary-title">Vitesse de Croisière : En Moins d'Une Année, Tout Bascule</h3>
+                    <p class="tours-summary-text">
+                        La beauté du système 7 Ensemble réside dans son <strong class="text-strong-cyan">accélération naturelle</strong>. Une fois votre Constellation créée, chaque tour se déroule à une vitesse époustouflante ! En moins d'une semaine, chaque membre de votre réseau constitue sa propre Constellation, créant un effet domino extraordinaire.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="urgence" class="urgence-section">
+            <div class="container">
+                <h2 class="section-header-large">⚡ URGENCE : Chaque Jour de Retard Est un Jour de Liberté Financière en Moins ! ⚡</h2>
+
+                <p class="hero-subtitle-text text-medium">
+                    <strong class="text-strong-red">L'heure est venue de transformer votre vie !</strong> <br> Pendant que vous hésitez, d'autres construisent déjà leur Constellation  <br> et récoltent leurs premiers gains. <br> <strong class="text-strong-cyan">Chaque jour de retard est un jour de liberté financière en moins.</strong>
+                </p>
+
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">47€</div>
+                        <p><strong>Premier Gain</strong><br>Votre récompense immédiate dès la première semaine</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">7</div>
+                        <p><strong>Jours Maximum</strong><br>Pour constituer votre Constellation complète</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <p><strong>Taux de Réussite</strong><br>Avec votre engagement et notre système</p>
+                    </div>
+                </div>
+
+                <p class="text-centered-italic">
+                    "Entraidons-nous car ensemble, nous changerons le monde et éradiquerons la pauvreté."
+                </p>
+
+                <button class="btn-primary btn-large-cta" onclick="showSevenModal()">🚀 Je Rejoins la Révolution Maintenant !</button>
+            </div>
+        </section>
+
+        <section id="mission" class="mission-section-box">
+            <div class="container">
+                <h2 class="section-header-large">
+                    <span class="coeur-magique">🫶</span> Mon Petit Coup de Gueule : Pourquoi 7 Ensemble ? <span class="coeur-magique">🫶</span>
+                </h2>
+
+                <div class="quote-box">
+                    <p class="text-italic-quote">
+                        "Ne supportant plus ce qui se passe autour de moi, j'ai voulu créé cette plateforme d'entraide révolutionnaire"
+                    </p>
+                </div>
+
+                <div class="explanation-box-cyan">
+                    <h3 class="section-header-cyan-large">🎯 Aller À LA SOURCE Du Problème</h3>
+
+                    <div class="text-center-legal">
+                        <strong>Aujourd'hui, tout le monde cherche plus d'argent mais peu vont à la source du vrai problème.</strong><br>
+                        Ce qu'il faut, ce n'est pas seulement plus d'aides ou moins d'impôts.<br>
+                        <strong class="text-strong-cyan"><br> Ce qu'il faut, c'est d'améliorer le pouvoir d'achat des gens, pour de bon.</strong><br><br>
+
+                        <strong>
+                            Au lieu de s'attaquer à la vraie cause, les États préfèrent colmater les fuites avec des hausses : <br> impôts, TVA, primes d'assurance maladie…  <br>
+                            ... Mais ce sont toujours les mêmes qui trinquent :
+                            <span class="text-strong-cyan-xl">Les Citoyens</span>.
+                            <br>Et à force d'appauvrir les gens pour maintenir un système qui ne tient plus, on finit par creuser le vrai problème au lieu de le résoudre.
+                        </strong><br><br>
+
+                        <strong class="text-strong-cyan-xl">
+                            C'est exactement là que <span class="text-header-large">7 Ensemble</span> entre en jeu.
+                        </strong><br><br>
+
+                        Avec 7 Ensemble, je propose une solution simple, concrète, et à la portée de tous.
+                        À partir d'un petit montant de départ, chacun peut participer à une dynamique d'entraide collective.
+                        Ce système permet à chacun d'améliorer réellement son pouvoir d'achat, sans dépendre de l'État ou des banques. <br>
+                        <strong class="text-strong-cyan-xl">Le Cœur du Projet, c'est l'Humain.</strong><br>
+
+                        <strong class="text-strong-cyan-xxl">LA PERSONNE</strong>
+
+                        <p class="text-explanation text-medium">
+                            Si la personne a un meilleur revenu, un meilleur pouvoir d'achat, il n'y a plus de problèmes de <br> chômage, de retraite insuffisante, de vol dans les magasins.
+                            <br><strong class="pulse text-strong-green">Avec 7Ensemble, il n'y aura plus de soucis de retraite et plus de vol !</strong>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- SECTION : Risque Zéro pour Vous -->
+                <section class="risk-zero-section">
+                    <h2 class="modal-header-risk">
+                        <span class="pulse-heart">❤️</span> Risque Zéro pour Vous <span class="pulse-heart">❤️</span>
+                    </h2>
+
+                    <p class="text-risk-section">
+                        Je suis le seul à investir dans cette plateforme. Pas de frais cachés. Pas de commissions. Pas de système obscur.
+                        Pour lancer un mouvement d'entraide et de dignité. Juste un don volontaire de <strong class="text-strong-cyan-mega"> 21€</strong> <br><br>
+
+                        Ce projet n'est pas un business. C'est une réponse à ce que je ne supporte plus : voir tant de gens finir chaque mois en négatif.
+                        Des familles qui n'arrivent plus à remplir le frigo. Des retraités qui ont travaillé toute leur vie… et n'ont même plus de quoi manger.<br><br>
+
+                        Ce que je construis ici, c'est ce que tout État digne de ce nom devrait offrir à son peuple : <br> un minimum de sécurité, de dignité, de solidarité.
+                        Mais l'État ne le fait pas. Il n'en a pas l'intérêt. Ce système-là ne fonctionne plus. <br>
+                        Alors je le fais. Pas pour gagner, mais pour que nous puissions enfin VIVRE. <br>
+                        Ensemble. À hauteur d'humain, laissons place à l'Amour fait avec le <span class="pulse-heart">❤️</span>  <br>
+                        On ne peut plus attendre que les États fassent ce qu'ils devraient faire.
+                        Et si un État aimait vraiment son peuple, c'est exactement ce qu'il mettrait en place. Mais ils ne le feront jamais.<br>
+                        Alors il ne faut plus attendre. Faisons-le nous-mêmes.<br><br>
+
+                        <strong class="text-strong-cyan-xxxl">7 Ensemble</strong> Qu'On Se Relève, Qu'On Rallume La Terre, main dans la main.
+                        Parce que je crois qu'on peut encore créer quelque chose de juste, d'humain, de beau.<br>
+                        Quelque chose où chacun retrouve sa place, <strong class="text-strong-cyan">la tête haute</strong>, avec un vrai pouvoir d'achat.<br><br>
+
+                        Ce n'est pas un cadeau que je vous fais : c'est une nécessité. Une évidence. Un cri du cœur.<br>
+                        <strong class="text-strong-cyan">Mon seul intérêt ici, c'est VOUS. Je Vous AIME</strong><br><br>
+                        <em class="text-white-normal"> Chaque matin je me lève, pour vous Voler des Rires, des Sourires, des Câlins et Sèmer l'Amour.</em>
+                    </p>
+                </section>
+
+                <!-- SECTION : 100% Légal -->
+                <section class="legal-section-box">
+                    <h2 class="section-header-cyan">⚖️ 100% Légal… mais pas toujours accepté par l'État</h2>
+
+                    <p class="text-legal-section">
+                        Ce que je vous propose ici n'est pas nouveau. Dans toutes les cultures du monde, des systèmes d'entraide existent depuis des siècles :
+                    </p>
+
+                    <ul class="text-legal-list">
+                        <li>• La Tontine, en Afrique de l'Ouest</li>
+                        <li>• Les ROSCA, en Asie et en Amérique latine</li>
+                        <li>• Les cercles de dons, aux États-Unis</li>
+                        <li>• Les Hui, en Chine</li>
+                        <li>• Les Chit Funds, en Inde</li>
+                    </ul>
+
+                    <p class="text-legal-section">
+                        Tous ces modèles ont permis à des familles de s'en sortir, sans banque, sans dette, juste avec la force du collectif.<br><br>
+                        Ce que je vous propose ici, c'est la même logique : un Élan Humain, volontaire, désintéressé.<br>
+                        Et même si c'est 100 % légal, cela dérange. La différence ? C'est que cela fonctionne sans l'État. Et c'est bien ce qui dérange.
+                        Parce que ce système échappe à leur contrôle. Parce que l'État n'aime pas quand le peuple s'en sort sans lui.
+                    </p>
+
+                    <p class="text-legal-section">
+                        Aujourd'hui, on trouve des formes de financement participatif comme le <strong>crowdfunding</strong> ou les <strong>levées de fonds en ligne</strong>, utilisées pour récolter des dons et financer des projets.<br>
+                    </p>
+
+                    <p class="text-white-bold-centered">
+                        Beaucoup aimeraient donner… mais il faut avoir pour pouvoir le faire.<br>
+                        Alors allons au Coeur du problème : redonnons du pouvoir d'achat.<br>
+                        Jusqu'à un vrai changement <strong class="text-strong-cyan-highlight">7 Ensemble</strong> pour tous.
+                    </p>
+
+                    <p class="text-legal-section">
+                        C'est pourquoi je mets en place <strong class="text-strong-cyan-highlight">7 Ensemble</strong> : pour redonner du pouvoir d'Achat à Chacun. <br> Pour que ceux qui veulent Aider, puissent enfin le faire.
+                    </p>
+
+                    <p class="text-legal-section">
+                        Dans ce projet, je veux même intégrer un système de <strong>cagnotte solidaire</strong> entre membres :<br>
+                        un espace où chacun peut déposer un petit montant ❤️ même symbolique ❤️ pour que, tous ensemble, on puisse soutenir :
+                    </p>
+
+                    <ul class="text-legal-list">
+                        <li>– des projets utiles,</li>
+                        <li>– des familles en galère,</li>
+                        <li>– des personnes arnaquées en plein chantier,</li>
+                        <li>– ou des causes humanitaires (catastrophes naturelles, guerres…)</li>
+                    </ul>
+
+                    <p class="text-white-bold-centered-large">
+                        Rome ne s'est pas faite en un jour, ni toute seule.<br>
+                        C'est avec <strong class="text-strong-cyan">7 Ensemble</strong> qu'on Rallumera la Terre et le <span class="glow-heart">❤️</span> des gens
+                    </p>
+
+                    <p class="text-centered-legal">
+                        <strong>Ce n'est pas une promesse de gain, c'est une réalité.</strong><br>
+                        <strong class="text-strong-cyan-highlight">7 Ensemble</strong>, c'est mathématique. <br>
+                        <br> Et s'il faut que je prenne des coups pour que vous puissiez vous relevez… alors je les prendrai.<br>
+                    </p>
+                </section>
+            </div>
+        </section>
+
+        <section class="cta-section-purple">
+            <div class="container">
+                <h2 class="text-header-large">Rejoignez la Révolution 7 Ensemble Dès Maintenant !</h2>
+
+                <div class="transformation-amount amount-display">1'575'747€</div>
+                <p class="text-destination-amount">Votre destination finale avec seulement 21€ de départ</p>
+
+                <div class="grid-three-column">
+                    <div class="stat-card">
+                        <h4 class="stat-card-title">Investissement Initial</h4>
+                        <p class="stat-card-amount">Seulement 21€</p>
+                        <p>pour changer votre vie</p>
+                    </div>
+                    <div class="stat-card">
+                        <h4 class="stat-card-title">Premier Résultat</h4>
+                        <p class="stat-card-amount">47€ nets</p>
+                        <p>dès la première semaine</p>
+                    </div>
+                    <div class="stat-card">
+                        <h4 class="stat-card-title">Potentiel Final</h4>
+                        <p class="stat-card-amount">Plus de <br>1,5 million d'euros</p>
+                        <p>à terme</p>
+                    </div>
+                </div>
+
+                <button class="btn-primary btn-xl-cta" onclick="showSevenModal()">
+                    <span class="coeur-magique">🫶</span>
+                    Ma Nouvelle VIE Commence Maintenant ! <span class="coeur-magique">🫶</span>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal d'inscription 7 personnes -->
+    <div id="sevenModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('sevenModal')">&times;</span>
+            <h2 class="modal-title-centered">🌟 Rejoindre 7 Ensemble 🌟</h2>
+
+            <form id="sevenForm" onsubmit="return submitForm(event, 'seven')">
+                <div class="form-group">
+                    <label for="sevenFullName">Nom complet :</label>
+                    <input type="text" id="sevenFullName" name="fullName" required placeholder="Votre nom et prénom">
+                </div>
+                <div class="form-group">
+                    <label for="sevenEmail">Email :</label>
+                    <input type="email" id="sevenEmail" name="email" required placeholder="votre@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="sevenCountry">Pays :</label>
+                    <select id="sevenCountry" name="country" required>
+                        <option value="">Choisir votre pays</option>
+                        <option value="FR">France</option>
+                        <option value="CH">Suisse</option>
+                        <option value="BE">Belgique</option>
+                        <option value="CA">Canada</option>
+                        <option value="MA">Maroc</option>
+                        <option value="TN">Tunisie</option>
+                        <option value="SN">Sénégal</option>
+                        <option value="CI">Côte d'Ivoire</option>
+                        <option value="IN">Inde</option>
+                        <option value="OTHER">Autre</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="sevenPaymentMethod">Mode de paiement préféré :</label>
+                    <select id="sevenPaymentMethod" name="paymentMethod" required>
+                        <option value="">Choisir votre méthode</option>
+                        <option value="card">💳 Carte bancaire</option>
+                        <option value="paypal">🔵 PayPal</option>
+                        <option value="transfer">🏦 Virement bancaire</option>
+                        <option value="mobile">📱 Mobile Money (Afrique)</option>
+                        <option value="crypto">₿ Bitcoin/Crypto</option>
+                        <option value="other">🌍 Autre (nous nous adapterons)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" name="terms" required class="checkbox-inline">
+                        <span class="checkbox-label-text">J'accepte le système d'entraide 7 Ensemble et comprends le principe de solidarité mutuelle.</span>
+                    </label>
+                </div>
+
+                <div class="section-centree">
+                    <h3>✨ Choisir mon option ✨</h3>
+
+                    <label>
+                        <input type="radio" name="choixOption" value="3">
+                        Option 3 personnes vers 7'789€
+                    </label>
+
+                    <label>
+                        <input type="radio" name="choixOption" value="7" checked>
+                        Option 7 personnes vers 1'575'747€
+                    </label>
+
+                    <button type="submit" class="btn-primary btn-full-width">
+                        🚀 Créer Ma Constellation !
+                    </button>
+
+                    <p class="voyage-text">
+                        Bravo, votre aventure commence ici 💖
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <style>/* Footer base styles (Mobile-first) */
+.site-footer {
+  background-color: #0f172a; /* Dark theme (neutral, modern) */
+  color: #e5e7eb;
+  text-align: center;
+  padding: 16px 12px;
+  font-size: 14px;
+  line-height: 1.5;
+
+  /* Sticky footer */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+/* Desktop (≥1280px) */
+@media (min-width: 1280px) {
+  .site-footer {
+    padding: 24px;
+    font-size: 16px;
+  }
+
+  body {
+    padding-bottom: 72px;
+  }
+}
+</style>
+    <footer class="site-footer">
+      <p>All Rights Reserved by 7 Ensemble</p>
+    </footer>
+
+    <!-- External Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+/* ===================================
+   7 ENSEMBLE - TOURS PAGE STYLES
+   Styles specific to les7tours.html
+   =================================== */
+
+/* === MAIN TITLE === */
+.main-title {
+    text-align: center;
+    font-size: 3rem;
+    margin: 3rem 0;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* === SECTION === */
+.section {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 3rem;
+    border-radius: 20px;
+    margin: 3rem 0;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* === CENTERED SECTION === */
+.section-centered {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* === HIGHLIGHT CLASSES === */
+.highlight-term {
+    color: #00c7bb;
+    font-weight: 600;
+}
+
+.highlight-lumiere {
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #d7faff;
+}
+
+.highlight-constellation {
+    color: #00e7d4;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+/* === TOURS OVERVIEW === */
+.tours-overview {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 3rem;
+    margin: 3rem 0;
+}
+
+.tour-table {
+    min-width: 0;
+    width: 100%;
+    overflow-x: hidden;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(0,0,0,0.2));
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+.table-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.option-3 .table-title {
+    background: linear-gradient(45deg, #f093fb, #f5576c);
+    color: white;
+}
+
+.option-7 .table-title {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+}
+
+/* === TABLES === */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+    table-layout: auto;
+}
+
+.tour-table table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+/* Column widths for option 7 */
+.option-7 table th:nth-child(5),
+.option-7 table td:nth-child(5) {
+    min-width: max-content;
+    white-space: nowrap;
+}
+
+th {
+    background: rgba(255,255,255,0.2);
+    padding: 1rem 0.5rem;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+td {
+    padding: 0.8rem 0.5rem;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.1);
+    font-weight: bold;
+}
+
+td.amount {
+    white-space: nowrap;
+}
+
+.tour-row:nth-child(even) {
+    background: rgba(255,255,255,0.05);
+}
+
+.amount {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.total-row {
+    background: linear-gradient(45deg,
+        rgba(255,107,107,0.3),
+        rgba(78,205,196,0.3)
+    );
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.highlight-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4ecdc4;
+}
+
+/* === EXPLANATION BOXES === */
+.explanation {
+    background: linear-gradient(45deg,
+        rgba(78,205,196,0.1),
+        rgba(255,107,107,0.1)
+    );
+    padding: 2rem;
+    border-radius: 15px;
+    margin: 2rem 0;
+    border-left: 5px solid #4ecdc4;
+}
+
+.important-note {
+    background: rgba(255,107,107,0.2);
+    padding: 2rem;
+    border-radius: 15px;
+    margin: 2rem 0;
+    border-left: 5px solid #ff6b6b;
+    font-weight: 500;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+    .tours-overview {
+        flex-direction: column;
+        align-items: center;
+        grid-template-columns: 1fr;
+    }
+
+    .tour-table {
+        max-width: 100%;
+    }
+
+    .main-title {
+        font-size: 2rem;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        padding: 0.5rem 0.3rem;
+    }
+
+    .container {
+        max-width: 1400px;
+    }
+}
