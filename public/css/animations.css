@@ -1,0 +1,16 @@
+/*
+ * This file is a placeholder for `public/css/animations.css`.
+ * In this Laravel 11 project with Vite and Tailwind CSS,
+ * all actual CSS content, including animation keyframes,
+ * is consolidated into `resources/css/app.css`.
+ *
+ * Vite processes `resources/css/app.css` and outputs the compiled CSS.
+ * For optimal performance and maintainability, it's recommended
+ * to manage all styles within `resources/css/app.css` and
+ * leverage Tailwind's JIT compilation and tree-shaking.
+ *
+ * The original `index.html` structure's CSS definitions
+ * for animations (blinking, glow-zoom, rotate) have been moved
+ * to `resources/css/app.css` and are applied via Tailwind classes
+ * or direct Alpine.js bindings in Blade components.
+*/

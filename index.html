@@ -1,60 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>7 Ensemble</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      /* Custom blinking animation for keywords */
-      @keyframes blink {
-        0%, 100% { opacity: 1; }
-        50% { opacity: 0.5; }
-      }
-      .animate-blink {
-        animation: blink 1.5s infinite;
-      }
-
-      /* Custom glowing button animation */
-      @keyframes glow-zoom {
-        0%, 100% {
-          box-shadow: 0 0 5px #10b981, 0 0 10px #10b981, 0 0 15px #10b981;
-          transform: scale(1);
-        }
-        50% {
-          box-shadow: 0 0 10px #10b981, 0 0 20px #10b981, 0 0 30px #10b981;
-          transform: scale(1.05);
-        }
-      }
-      .animate-glow-zoom {
-        animation: glow-zoom 2s infinite ease-in-out;
-      }
-
-      /* Rotating animation for constellations */
-      @keyframes rotate {
-        from { transform: rotate(0deg); }
-        to { transform: rotate(360deg); }
-      }
-      .animate-rotate-slow {
-        animation: rotate 20s linear infinite;
-      }
-    </style>
 <script type="importmap">
 {
   "imports": {
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "react": "https://esm.sh/react@^19.2.3",
-    "react-router-dom": "https://esm.sh/react-router-dom@^7.12.0",
-    "recharts": "https://esm.sh/recharts@^3.6.0",
-    "react-dom": "https://esm.sh/react-dom@^19.2.3",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
     "alpinejs": "https://esm.sh/alpinejs@^3.15.3"
   }
 }
 </script>
-</head>
-<body class="bg-gray-900 text-gray-100 min-h-screen">
-    <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
-</body>
-</html>

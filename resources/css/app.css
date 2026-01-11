@@ -1,3 +1,157 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Brand Colors for dynamic use in JS/Alpine */
+:root {
+  --7ensemble-red: #EF4444; /* Tailwind red-500 */
+  --7ensemble-orange: #F97316; /* Tailwind orange-500 */
+  --7ensemble-yellow: #EAB308; /* Tailwind yellow-500 */
+  --7ensemble-green: #22C55E; /* Tailwind green-500 */
+  --7ensemble-blue: #3B82F6; /* Tailwind blue-500 */
+  --7ensemble-purple: #A855F7; /* Tailwind purple-500 */
+  --7ensemble-magenta: #EC4899; /* Tailwind pink-500 */
+}
+
+/* Cosmic Gradient Background */
+body {
+    background: linear-gradient(180deg, #0f1419 0%, #1a237e 30%, #3949ab 60%, #5c6bc0 85%, #9c27b0 100%);
+    min-height: 100vh;
+    overflow-x: hidden; /* Prevent horizontal scroll due to stars */
+    position: relative; /* For absolutely positioned stars */
+}
+
+/* Twinkling Stars Animation */
+.stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: -1; /* Behind other content */
+}
+
+.star {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    opacity: 0;
+    animation: twinkle-fade 3s infinite ease-in-out alternate;
+}
+
+@keyframes twinkle-fade {
+    0% { opacity: 0; transform: scale(0.5); }
+    50% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0; transform: scale(0.5); }
+}
+
+/* Custom blinking animation for keywords */
+@keyframes blink {
+  0% { opacity: 0.35; } /* Start with lower opacity */
+  50% { opacity: 1; }
+  100% { opacity: 0.35; } /* End with lower opacity */
+}
+.animate-blink {
+  animation: blink 1.4s infinite ease-in-out; /* 1.4s cycle as requested */
+}
+
+/* Custom glowing button animation */
+@keyframes glow-zoom {
+  0%, 100% {
+    box-shadow: 0 0 8px #20c997, 0 0 16px #20c997, 0 0 24px #20c997; /* Green glow */
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 16px #20c997, 0 0 32px #20c997, 0 0 48px #20c997;
+    transform: scale(1.05); /* Zoom effect */
+  }
+}
+.animate-glow-zoom {
+  animation: glow-zoom 2s infinite ease-in-out;
+}
+
+/* Rotating animation for constellations */
+@keyframes rotate360 {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.animate-rotate-slow {
+  animation: rotate360 20s linear infinite;
+}
+
+/* Dancing Silhouettes Animation */
+@keyframes dance {
+  0% { transform: translateY(0) scale(1); }
+  25% { transform: translateY(-10px) scale(0.95); }
+  50% { transform: translateY(0) scale(1.05); }
+  75% { transform: translateY(-8px) scale(0.98); }
+  100% { transform: translateY(0) scale(1); }
+}
+.dancing-silhouette {
+  animation: dance 2s infinite ease-in-out alternate-reverse;
+}
+
+/* Confetti Animation */
+@keyframes fall {
+  0% {
+    transform: translateY(-10vh) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+.confetti-piece {
+  animation: fall 3s linear infinite;
+  /* Delay and duration will be randomized by Alpine.js */
+}
+
+/* Glassmorphism effect for cards (example) */
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.05); /* Very slight white background */
+  backdrop-filter: blur(10px); /* Blur effect */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Specific styles for buttons */
+.btn-primary {
+  @apply bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-opacity-75;
+}
+
+.btn-secondary {
+  @apply bg-gray-700 hover:bg-gray-600 text-gray-100 font-bold py-3 px-6 rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-75;
+}
+
+.btn-danger {
+  @apply bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-opacity-75;
+}
+
+.btn-outline {
+  @apply border border-emerald-500 text-emerald-500 hover:bg-emerald-500 hover:text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-opacity-75;
+}
+
+/* Specific styles for form inputs */
+.form-input-style {
+  @apply w-full p-3 rounded-md bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all duration-200;
+}
+
+.form-checkbox-radio-style {
+  @apply form-checkbox h-5 w-5 text-emerald-500 bg-gray-700 border-gray-600 rounded focus:ring-emerald-500 transition-colors duration-200;
+}
+
+/* Custom styles for the select dropdown arrow */
+.custom-select-arrow {
+  @apply pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-400;
+}
+
+/* Style for active navigation links */
+.nav-link.active {
+    @apply text-emerald-300 border-b-2 border-emerald-300;
+}
